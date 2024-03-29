@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Oswald:wght@200..700&display=swap');
+/* font-family: "Oswald", sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: map-get($colores , color-fondo );
+    color: map-get($colores , color-texto );
+    font-family: "Oswald", sans-serif;
+}
+.active{
+    color: map-get($colores , color-secundario ) !important;
+}
+header{
+    font-size: 25px;
+    .logo{
+        width: 250px;
+        height: auto;
+    }
+}
+footer{
+    display: flex;
+    padding: 10px;
+    div{
+        width: 33%;
+        a{
+            i{
+                font-size: 40px;
+                &:hover{
+                    color: map-get($colores , color-secundario )
+                }
+            }
+        }
+    }
+    .ubicacion{
+        text-align: right;
+    }
+    .whatsapp{
+        text-align: center;
+    }
+    .instagram{
+        text-align: left;
+    }
+}

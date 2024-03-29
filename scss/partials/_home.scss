@@ -1,0 +1,53 @@
+.home{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 100px 1fr;
+    .posteBarbero{
+        height: 300px;
+        width: auto;
+        margin: 0;
+        @include grid_position(1,2,1,2);
+    }
+    .eslogan{
+        text-align: center;
+        font-size: 40px;
+        text-shadow: 1px 1px map-get($colores , color-secundario );
+        @include grid_position( 1,2, 2,3 );
+    }
+    .reservar{
+        border: 2px solid map-get($colores , color-secundario );
+        width: 80%;
+        margin: 10px;
+        padding: 10px;
+        @include grid_position( 1,2, 3,4 );
+        display: grid;
+        justify-items: center;
+        h2{
+            text-align: center;
+            font-size: 30px;
+        }
+        input{
+            width: 80%;
+            margin-top: 15px;
+            border: 1px solid map-get($colores , color-secundario );
+        }
+        select{
+            width: 80%;
+            border: 1px solid map-get($colores , color-secundario );
+        }
+        button{
+            width: 80%;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 15px;
+            border: 1px solid map-get($colores , color-secundario );
+            &:hover{
+                background-image: radial-gradient(#444001, map-get($colores , color-secundario) );
+            }
+        }
+        
+
+    }
+}

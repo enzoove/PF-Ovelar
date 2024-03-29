@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Oswald:wght@200..700&display=swap");
+/* font-family: "Oswald", sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: "Oswald", sans-serif;
+}
+
+.active {
+  color: rgb(218, 165, 32) !important;
+}
+
+header {
+  font-size: 25px;
+}
+header .logo {
+  width: 250px;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  padding: 10px;
+}
+footer div {
+  width: 33%;
+}
+footer div a i {
+  font-size: 40px;
+}
+footer div a i:hover {
+  color: rgb(218, 165, 32);
+}
+footer .ubicacion {
+  text-align: right;
+}
+footer .whatsapp {
+  text-align: center;
+}
+footer .instagram {
+  text-align: left;
+}
+
+.home {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px 100px 1fr;
+}
+.home .posteBarbero {
+  height: 300px;
+  width: auto;
+  margin: 0;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.home .eslogan {
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 1px 1px rgb(218, 165, 32);
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.home .reservar {
+  border: 2px solid rgb(218, 165, 32);
+  width: 80%;
+  margin: 10px;
+  padding: 10px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: grid;
+  justify-items: center;
+}
+.home .reservar h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.home .reservar input {
+  width: 80%;
+  margin-top: 15px;
+  border: 1px solid rgb(218, 165, 32);
+}
+.home .reservar select {
+  width: 80%;
+  border: 1px solid rgb(218, 165, 32);
+}
+.home .reservar button {
+  width: 80%;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 15px;
+  border: 1px solid rgb(218, 165, 32);
+}
+.home .reservar button:hover {
+  background-image: radial-gradient(#444001, rgb(218, 165, 32));
+}
+
+/*# sourceMappingURL=style.css.map */
