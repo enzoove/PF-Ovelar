@@ -19,7 +19,7 @@
     }
     .reservar{
         border: 2px solid map-get($colores , color-secundario );
-        width: 80%;
+        width: 70%;
         margin: 10px;
         padding: 10px;
         @include grid_position( 1,2, 3,4 );
