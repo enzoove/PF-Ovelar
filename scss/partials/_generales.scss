@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Oswald:wght@200..700&display=swap');
 /* font-family: "Oswald", sans-serif; */
+@font-face {
+    font-family: thestudents;
+    src: url(../assets/fonts/TheStudentsTeacher-Regular.ttf);
+}
 
 *{
     margin: 0;
@@ -10,7 +14,10 @@
     font-family: "Oswald", sans-serif;
 }
 .active{
-    color: map-get($colores , color-secundario ) !important;
+    color: rgba(218, 165, 32, 0.726) !important;
+    &:hover{
+        color: map-get($colores , color-secundario ) !important;
+    }
 }
 header{
     font-size: 25px;

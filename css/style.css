@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Oswald:wght@200..700&display=swap");
 /* font-family: "Oswald", sans-serif; */
+@font-face {
+  font-family: thestudents;
+  src: url(../assets/fonts/TheStudentsTeacher-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +14,9 @@
 }
 
 .active {
+  color: rgba(218, 165, 32, 0.726) !important;
+}
+.active:hover {
   color: rgb(218, 165, 32) !important;
 }
 
@@ -103,6 +110,73 @@ footer .instagram {
 }
 .home .reservar button:hover {
   background-image: radial-gradient(#444001, rgb(218, 165, 32));
+}
+
+.sobreNosotros {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 60px 280px 240px 60px 280px 270px;
+}
+.sobreNosotros h1 {
+  text-shadow: 1px 1px rgb(218, 165, 32);
+  text-align: center;
+  font-size: 50px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.sobreNosotros h2 {
+  text-align: center;
+  font-size: 35px;
+}
+.sobreNosotros img {
+  height: 280px;
+  width: auto;
+}
+.sobreNosotros p {
+  font-size: 25px;
+  text-align: justify;
+  padding: 5px;
+  margin: 5px;
+  font-family: thestudents, sans-serif;
+}
+.sobreNosotros .subtBarberia {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.sobreNosotros .fotoBarberia {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.sobreNosotros .descripcionBarberia {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.sobreNosotros .subtBarberos {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.sobreNosotros .fotoBarberos {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+.sobreNosotros .descripcionBarberos {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 7;
+  grid-row-end: 8;
 }
 
 /*# sourceMappingURL=style.css.map */
