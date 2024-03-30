@@ -1,0 +1,19 @@
+.nuestrosCortes{
+    @extend %flex_catalogo;
+    
+    .tarjetaCorte{
+        display: grid;
+        grid-template-columns: 250px;
+        grid-template-rows: 200px 80px;
+        border: 2px solid map-get($colores , color-secundario );
+        background-color: rgb(29, 28, 28);
+        margin: 20px;
+        
+        h2{
+            font-size: 30px;
+            text-align: center;
+            background-color: rgb(29, 28, 28);
+        }
+    }
+
+}

@@ -3,9 +3,32 @@ $colores:(
     color-texto: rgb(255, 255, 255),
     color-secundario: rgb(218, 165, 32)
 );
+%flex_catalogo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    h1{
+        width: 100%;
+        font-size: 50px;
+        text-align: center;
+        text-shadow: 1px 1px map-get($colores , color-secundario );
+    }
+}
+.fotoTarjeta{
+    height: 200px;
+            padding: 15px;
+            margin: auto;
+            background-color: rgba(29, 28, 28, 0);
+            &:hover{
+                transform: scale(1.15);
+            }
+}
 @mixin grid_position($inicioColumna, $finColumna, $inicioFila, $finFila){
     grid-column-start: $inicioColumna;
     grid-column-end: $finColumna;
     grid-row-start: $inicioFila;
     grid-row-end: $finFila;
+}
+@keyframes efecto_poste{
+    50%{height: 102%;}
 }

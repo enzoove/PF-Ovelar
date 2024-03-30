@@ -1,0 +1,20 @@
+.productos{
+    @extend %flex_catalogo;
+    .tarjetaProducto{
+        display: grid;
+        grid-template-columns: 250px;
+        grid-template-rows: 200px 80px 80px;
+        border: 2px solid map-get($colores , color-secundario );
+        background-color: rgb(29, 28, 28);
+        margin: 20px;
+        .fotoProducto{
+            height: 200px;
+            padding: 15px;
+            margin: auto;
+            background-color: rgba(29, 28, 28, 0);
+            &:hover{
+                transform: scale(1.15);
+            }
+        }
+    }
+}

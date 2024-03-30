@@ -1,4 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Oswald:wght@200..700&display=swap");
+.productos, .nuestrosCortes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.productos h1, .nuestrosCortes h1 {
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 1px 1px rgb(218, 165, 32);
+}
+
+.fotoTarjeta {
+  height: 200px;
+  padding: 15px;
+  margin: auto;
+  background-color: rgba(29, 28, 28, 0);
+}
+.fotoTarjeta:hover {
+  transform: scale(1.15);
+}
+
+@keyframes efecto_poste {
+  50% {
+    height: 102%;
+  }
+}
 /* font-family: "Oswald", sans-serif; */
 @font-face {
   font-family: thestudents;
@@ -40,6 +67,8 @@ footer div a i {
 }
 footer div a i:hover {
   color: rgb(218, 165, 32);
+  transform: scale(1.3);
+  transition: all 0.2s;
 }
 footer .ubicacion {
   text-align: right;
@@ -177,6 +206,38 @@ footer .instagram {
   grid-column-end: 2;
   grid-row-start: 7;
   grid-row-end: 8;
+}
+
+.nuestrosCortes .tarjetaCorte {
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: 200px 80px;
+  border: 2px solid rgb(218, 165, 32);
+  background-color: rgb(29, 28, 28);
+  margin: 20px;
+}
+.nuestrosCortes .tarjetaCorte h2 {
+  font-size: 30px;
+  text-align: center;
+  background-color: rgb(29, 28, 28);
+}
+
+.productos .tarjetaProducto {
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: 200px 80px 80px;
+  border: 2px solid rgb(218, 165, 32);
+  background-color: rgb(29, 28, 28);
+  margin: 20px;
+}
+.productos .tarjetaProducto .fotoProducto {
+  height: 200px;
+  padding: 15px;
+  margin: auto;
+  background-color: rgba(29, 28, 28, 0);
+}
+.productos .tarjetaProducto .fotoProducto:hover {
+  transform: scale(1.15);
 }
 
 /*# sourceMappingURL=style.css.map */
