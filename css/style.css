@@ -376,11 +376,6 @@ footer .instagram {
   footer div a i {
     font-size: 70px;
   }
-  .homeFooter {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
   .ubicacion h1 {
     font-size: 60px;
   }
@@ -389,13 +384,6 @@ footer .instagram {
   }
   .ubicacion .mapa {
     height: 400px;
-  }
-}
-@media only screen and (min-height: 810px) {
-  .snFooter {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
   }
 }
 

@@ -74,11 +74,6 @@
             }
         }
     }
-    .homeFooter{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
     .ubicacion{
         h1{
             font-size: 60px;
@@ -89,12 +84,5 @@
         .mapa{
             height: 400px;
         }
-    }
-}
-@media only screen and (min-height: 810px){
-    .snFooter{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
     }
 }
